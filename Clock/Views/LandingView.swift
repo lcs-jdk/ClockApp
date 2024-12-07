@@ -10,7 +10,7 @@ import SwiftUI
 struct LandingView: View {
     var body: some View {
         VStack {
-            TabView(selection: Binding.constant(1)) {
+            TabView(selection: Binding.constant(2)) {
                        
                        WorldClockView()
                            .tabItem {
@@ -34,7 +34,7 @@ struct LandingView: View {
                            .tag(3)
             }
             .preferredColorScheme(.dark)
-            .tint(.green)
+            .tint(.orange)
         }
         .padding()
     }

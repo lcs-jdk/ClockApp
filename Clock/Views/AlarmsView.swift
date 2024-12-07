@@ -9,10 +9,37 @@ import SwiftUI
 
 struct AlarmsView: View {
     var body: some View {
-        Text("Alarms")
+        NavigationStack{
+            VStack{
+                ExtractedView()
+            }
+            .navigationTitle("Alarms")
+        }
     }
 }
-
 #Preview {
-    AlarmsView()
+    LandingView()
+}
+
+
+
+struct ExtractedView: View {
+    var body: some View {
+        HStack{
+            //Left side
+            Text("7:30")
+                .font(.system(size: 64.0,weight: .thin, design: .default))
+            Text("AM")
+                .font(.system(.largeTitle, design: .default, weight: .thin))
+            
+            Spacer()
+            
+            //Right side
+            Toggle("", isOn: Binding.constant(true))
+            
+            
+            
+        }
+        .padding()
+    }
 }

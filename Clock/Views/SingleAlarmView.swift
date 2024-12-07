@@ -24,21 +24,21 @@ struct SingleAlarmView: View {
                     Text(time)
                         .font(.system(size: 64.0,weight: .thin, design: .default))
                     
-                
+                    
                     Text(AMOrPM)
                         .font(.system(.largeTitle, design: .default, weight: .thin))
-
+                    
                 }
-                                
+                
                 Text("Alarm")
                 
             }
-                
+            
             Spacer()
-
+            
             
             //Right side
-          
+            
             
             if isOn {
                 Toggle("", isOn: Binding.constant(true))
@@ -53,11 +53,11 @@ struct SingleAlarmView: View {
             
             
         }
-        .padding()
     }
 }
 
 #Preview {
     SingleAlarmView(time: "10:30", isOn: true, AMOrPM: "AM")
+        .padding()
         .preferredColorScheme(.dark)
 }

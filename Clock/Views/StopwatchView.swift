@@ -9,10 +9,32 @@ import SwiftUI
 
 struct StopwatchView: View {
     var body: some View {
-        Text("Stopwatch")
+        NavigationStack{
+            
+            VStack{
+                
+                
+                
+                HStack{
+                    
+                    
+                    //Counting
+                    Text("00.00.00")
+                        .font(.system(size: 90.0, weight: .thin, design: .default))
+                        
+                    
+                    
+                    
+                    
+                    
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    StopwatchView()
+    LandingView()
+        .preferredColorScheme(.dark)
+    
 }

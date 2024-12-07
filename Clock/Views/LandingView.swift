@@ -42,4 +42,5 @@ struct LandingView: View {
 
 #Preview {
     LandingView()
+        .preferredColorScheme(.dark)
 }

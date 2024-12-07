@@ -15,4 +15,5 @@ struct TimersView: View {
 
 #Preview {
     TimersView()
+        .preferredColorScheme(.dark)
 }

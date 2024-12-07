@@ -52,6 +52,7 @@ struct WorldClockView: View {
 
 #Preview {
     LandingView()
+        .preferredColorScheme(.dark)
 }
 
 

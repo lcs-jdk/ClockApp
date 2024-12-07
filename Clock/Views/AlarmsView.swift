@@ -11,7 +11,8 @@ struct AlarmsView: View {
     var body: some View {
         NavigationStack{
             VStack{
-                ExtractedView()
+                SingleAlarmView(time: "7:30", isOn: true, AMOrPM: "AM")
+                SingleAlarmView(time: "6:30", isOn: false, AMOrPM: "PM")
             }
             .navigationTitle("Alarms")
         }
@@ -19,27 +20,9 @@ struct AlarmsView: View {
 }
 #Preview {
     LandingView()
+        .preferredColorScheme(.dark)
 }
 
 
 
-struct ExtractedView: View {
-    var body: some View {
-        HStack{
-            //Left side
-            Text("7:30")
-                .font(.system(size: 64.0,weight: .thin, design: .default))
-            Text("AM")
-                .font(.system(.largeTitle, design: .default, weight: .thin))
-            
-            Spacer()
-            
-            //Right side
-            Toggle("", isOn: Binding.constant(true))
-            
-            
-            
-        }
-        .padding()
-    }
-}
+

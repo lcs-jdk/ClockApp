@@ -31,6 +31,27 @@
 		9376154E2D0392FA00A5A943 /* CityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1F23C0462D09F2F1009B1F97 /* Exceptions for "Model" folder in "ClockApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				City.swift,
+			);
+			target = 9376152B2D03871D00A5A943 /* ClockApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1F23C0432D09F2E0009B1F97 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1F23C0462D09F2F1009B1F97 /* Exceptions for "Model" folder in "ClockApp" target */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		937615292D03871D00A5A943 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -62,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				937615402D0387B900A5A943 /* ClockAppApp.swift */,
+				1F23C0432D09F2E0009B1F97 /* Model */,
 				937615472D0387F100A5A943 /* Views */,
 				9376153F2D0387B900A5A943 /* Assets.xcassets */,
 			);
